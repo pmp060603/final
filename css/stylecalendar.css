@@ -1,0 +1,30 @@
+.calendar {
+    border: 1px solid #206AB5;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.calendar table {
+    width: 100%;
+}
+
+.calendar table tr td.monthyear {
+    background-color: #F60;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF;
+    border: 1px solid #666;
+}
+
+.calendar table tr.weektitle td {
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #666;
+    background-color: #CCF;
+}
+
+.calendar table tr td.weekday {
+    text-align: center;
+    border: 1px solid #666;
+}

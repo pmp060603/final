@@ -1,0 +1,19 @@
+$(document).ready(function() {
+    var currentSlide = 0;
+    var slides = $('.slide-image');
+    var totalSlides = slides.length;
+
+    $('.slide-control-next').click(function() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        updateSlidePosition();
+    });
+
+    $('.slide-control-prev').click(function() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        updateSlidePosition();
+    });
+
+    function updateSlidePosition() {
+        $('.slide-stage').css('transform', 'translateX(' + (-currentSlide * 100) + '%)');
+    }
+});

@@ -1,0 +1,37 @@
+/* Style.css */
+.calendar table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+.calendar .monthyear {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.calendar .weektitle {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.calendar td {
+    width: 14.28%;
+    height: 60px;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+.calendar .weekday {
+    cursor: pointer;
+}
+
+.calendar .weekday strong {
+    color: red;
+}
